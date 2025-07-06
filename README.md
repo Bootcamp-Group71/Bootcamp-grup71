@@ -1,8 +1,18 @@
+## Takım İsmi
+
+## Takım
+
+|                       | <div align="center">İsim</div> | <div align="center">Rol</div>                                                                                                                 | <div align="center">Sosyal Medya</div> |
+| :-------------------: | :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- | :------------------------------------: |
+| Yusuf Sabri Karakoyun | Product Owner                  | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/yusuf-k-3a8235234) |
+|    Başak Göğdeniz     | Scrum Master                   | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/basakgogdeniz/)    |
+|   Ömer Faruk Günay    | Developer                      | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ofarukgunay)       |
+|    Ayşenur Aydoğdu    | Developer                      | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/aysenuraydogdu-/)  |
+|   Özlem Deniz Peri    | Developer                      | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)]                                                |
+
 ## Ürün İsmi
 
 <h1> ResQ </h1>
-
-## Takım
 
 # Ürün Logosu
 
@@ -68,10 +78,22 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 ## Sprint 1 Raporu
 
+- **Sprint içinde tamamlanması tahmin edilen puan:** 110 puan
+- **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlandı. Ürünün içeriği ve projenin iskeletinin şekillendirilmesi ile ilgili olan görevlerin ilk sprintte bitirilmesi planlandığından bu görevler tamamlanarak 110 puan kazanılması planlandı.
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir:
+
 ## Sprint Review
 
-**Katılımcılar:**
+- Proje panosu kurulmuş ve GitHub reposu oluşturulmuştur.
+- Ürünün ismi belirlenmiştir.
+- Sprint takviminin planlanmasının ardından backloglar üyelere bölüştürülmüştür.
+- Projenin vizyonu, hedef kitle, ürünün içeriği, rakip uygulamalar, ana eğitim modülleri ve bu modüllerin sıralamaları ve zorluk seviyeleri belirlenmiştir.
+- Ürün için logo tasarımı yapılmıştır.
+
+**Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
 
 ## Sprint Retrospective
 
-**Katılımcılar:**
+- Takım üyelerine gelecek sprintlerde daha fazla iş yükü olacağı hatırlatılıp, toplantıların arttırılması gerektiğine ve üyelerden Özlem Deniz Peri'nin pasif üye olarak gösterilmesine karar verilmiştir.
+
+**Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
