@@ -63,6 +63,7 @@ ResQ’nun temel amacı, bireylerin acil durumlarda hızlı, bilinçli ve etkili
 # Proje Yönetimi
 
 ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme süreci sprintlere bölünmüş ve her sprint sonunda aşağıdaki adımlar uygulanmıştır:
+
 [**Product Backlog Board'a Göz Atın**]
 
 ## Sprint 1 Raporu
