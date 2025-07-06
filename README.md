@@ -77,9 +77,10 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 
 
-
+**Katılımcılar:**
 
 ## Sprint Retrospective
 
 
 
+**Katılımcılar:**
