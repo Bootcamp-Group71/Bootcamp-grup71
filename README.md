@@ -53,12 +53,12 @@ ResQ’nun temel amacı, bireylerin acil durumlarda hızlı, bilinçli ve etkili
 
 # Kullanılan Teknolojiler
 
-- .
-- .
-- .
-- .
-- .
-- .
+- **Yapay Zeka & Makine Öğrenmesi:** Gemini
+- **Back-End:** Python (FastAPI)
+- **Veritabanı:** PostegroSQL
+- **Mobile Framework:** Flutter
+- **Proje Yönetimi:** Miro
+- **Versiyon Kontrol:** Git & GitHub
 
 # Proje Yönetimi
 
