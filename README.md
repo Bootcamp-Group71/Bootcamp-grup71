@@ -1,8 +1,8 @@
-## Takımımız & Ürün İsmi
+## Ürün İsmi
 
 # ResQ
 
-## Takımımız
+## Takım
 
 # Ürün Logosu
 
