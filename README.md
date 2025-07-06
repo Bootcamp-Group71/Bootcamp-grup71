@@ -16,7 +16,7 @@
 
 # Ürün Logosu
 
-<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/6-lacivert.png" alt="ResQ Logo" width="200"/>
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/logo.png" alt="ResQ Logo" width="200"/>
 
 # Projenin Açıklaması
 
