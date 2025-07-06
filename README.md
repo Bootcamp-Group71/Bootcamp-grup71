@@ -74,13 +74,15 @@ ResQ’nun temel amacı, bireylerin acil durumlarda hızlı, bilinçli ve etkili
 
 ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme süreci sprintlere bölünmüş ve her sprint sonunda aşağıdaki adımlar uygulanmıştır:
 
-[**Product Backlog Board'a Göz Atın**]
+[**Product Backlog Board'a Göz Atın**](https://miro.com/app/board/uXjVIi_WLf4=/)
 
 ## Sprint 1 Raporu
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 110 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlandı. Ürünün içeriği ve projenin iskeletinin şekillendirilmesi ile ilgili olan görevlerin ilk sprintte bitirilmesi planlandığından bu görevler tamamlanarak 110 puan kazanılması planlandı.
 - **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir:
+
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/sprintboard.png" alt="sprintboard" width="800"/> <br>
 
 ## Sprint Review
 
