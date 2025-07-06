@@ -1,18 +1,5 @@
-## 📑 İçindekiler
 
-- [Takımımız & Ürün İsmi](#takım--ürün-ismi)
-  - [ResQ](#neetup)
-    - [👥 Takımımız](#-takımımız)
-    - [Ürün Logosu](#ürün-logosu)
-    - [Projenin Açıklaması](#projenin-açıklaması)
-    - [Projenin Amacı](#projenin-amacı)
-    - [Temel Özellikler](#temel-özellikler)
-    - [Hedef Kitle](#hedef-kitle)
-    - [İş Modeli ve Gelecek Planları](#iş-modeli-ve-gelecek-planları)
-    - [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
-    - [Proje Yönetimi ve Sprint Raporları](#proje-yönetimi-ve-sprint-raporları)
-      - [Sprint 1 Raporu](#sprint-1-raporu)
-      - [Sprint 2 Raporu](#sprint-2-raporu)
+
 
 # Takımımız & Ürün İsmi
 
