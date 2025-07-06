@@ -6,7 +6,7 @@
 
 # Ürün Logosu
 
-![ResQ Logo](6-lacivert.png)
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/6-lacivert.png" alt="ResQ Logo" width="200"/>
 
 # Projenin Açıklaması
 
@@ -68,20 +68,10 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 ## Sprint 1 Raporu
 
-
-
-
-
-
 ## Sprint Review
-
-
-
 
 **Katılımcılar:**
 
 ## Sprint Retrospective
-
-
 
 **Katılımcılar:**
