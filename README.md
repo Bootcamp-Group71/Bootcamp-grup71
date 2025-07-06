@@ -1,6 +1,6 @@
 ## Ürün İsmi
 
-# ResQ
+<h1> ResQ </h1>
 
 ## Takım
 
