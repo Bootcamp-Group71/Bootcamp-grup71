@@ -77,30 +77,33 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 [**Product Backlog Board'a Göz Atın**](https://miro.com/app/board/uXjVIi_WLf4=/)
 
 <details>
-  <summary><b>## Sprint 1 Raporu</b> </summary>
-  - **Sprint içinde tamamlanması tahmin edilen puan:** 110 puan
-  - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlandı. Ürünün içeriği ve projenin iskeletinin şekillendirilmesi ile ilgili olan görevlerin ilk sprintte bitirilmesi planlandığından bu görevler tamamlanarak 110 puan kazanılması planlandı.
-  - **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 1- Daily Scrum Chats**](https://imgur.com/a/vgc97Ck)
+<summary><h2>Sprint 1 Raporu</h2></summary>
 
-<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/sprintboard.png" alt="sprintboard" width="800"/> <br>
+- **Sprint içinde tamamlanması tahmin edilen puan:** 110 puan
+- **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlandı. Ürünün içeriği ve projenin iskeletinin şekillendirilmesi ile ilgili olan görevlerin ilk sprintte bitirilmesi planlandığından bu görevler tamamlanarak 110 puan kazanılması planlandı.
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 1- Daily Scrum Chats**](https://imgur.com/a/vgc97Ck)
+
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/sprintboard.png" alt="sprintboard" width="800"/>
 
 </details>
 
 <details>
-  <summary><b>## Sprint Review</b> </summary>
-  - Proje panosu kurulmuş ve GitHub reposu oluşturulmuştur.
-  - Ürünün ismi belirlenmiştir.
-  - Sprint takviminin planlanmasının ardından backloglar üyelere bölüştürülmüştür.
-  - Projenin vizyonu, hedef kitle, ürünün içeriği, rakip uygulamalar, ana eğitim modülleri ve bu modüllerin sıralamaları ve zorluk seviyeleri belirlenmiştir.
-  - Ürün için logo tasarımı yapılmıştır.
+<summary><h2>Sprint Review</h2></summary>
+
+- Proje panosu kurulmuş ve GitHub reposu oluşturulmuştur.
+- Ürünün ismi belirlenmiştir.
+- Sprint takviminin planlanmasının ardından backloglar üyelere bölüştürülmüştür.
+- Projenin vizyonu, hedef kitle, ürünün içeriği, rakip uygulamalar, ana eğitim modülleri ve bu modüllerin sıralamaları ve zorluk seviyeleri belirlenmiştir.
+- Ürün için logo tasarımı yapılmıştır.
 
 **Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
 
 </details>
 
 <details>
-  <summary><b>## Sprint Retrospective</b> </summary>
-  - Takım üyelerine gelecek sprintlerde daha fazla iş yükü olacağı hatırlatılıp, toplantıların arttırılması gerektiğine ve üyelerden Özlem Deniz Peri'nin pasif üye olarak gösterilmesine karar verilmiştir.
+<summary><h2>Sprint Retrospective</h2></summary>
+
+- Takım üyelerine gelecek sprintlerde daha fazla iş yükü olacağı hatırlatılıp, toplantıların arttırılması gerektiğine ve üyelerden Özlem Deniz Peri'nin pasif üye olarak gösterilmesine karar verilmiştir.
 
 **Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
 
