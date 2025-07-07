@@ -77,7 +77,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 [**Product Backlog Board'a Göz Atın**](https://miro.com/app/board/uXjVIi_WLf4=/)
 
 <details>
-<summary><h2>Sprint 1 Raporu</h2></summary>
+<summary><h3>Sprint 1 Raporu</h3></summary>
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 110 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlandı. Ürünün içeriği ve projenin iskeletinin şekillendirilmesi ile ilgili olan görevlerin ilk sprintte bitirilmesi planlandığından bu görevler tamamlanarak 110 puan kazanılması planlandı.
@@ -88,7 +88,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 </details>
 
 <details>
-<summary><h2>Sprint Review</h2></summary>
+<summary><h3>Sprint Review</h3></summary>
 
 - Proje panosu kurulmuş ve GitHub reposu oluşturulmuştur.
 - Ürünün ismi belirlenmiştir.
@@ -101,7 +101,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 </details>
 
 <details>
-<summary><h2>Sprint Retrospective</h2></summary>
+<summary><h3>Sprint Retrospective</h3></summary>
 
 - Takım üyelerine gelecek sprintlerde daha fazla iş yükü olacağı hatırlatılıp, toplantıların arttırılması gerektiğine ve üyelerden Özlem Deniz Peri'nin pasif üye olarak gösterilmesine karar verilmiştir.
 
