@@ -76,7 +76,9 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 [**Product Backlog Board'a Göz Atın**](https://miro.com/app/board/uXjVIi_WLf4=/)
 
-## Sprint 1 Raporu
+<details>
+  <summary><b>## Sprint 1 Raporu</b> </summary>
+</details>
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 110 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlandı. Ürünün içeriği ve projenin iskeletinin şekillendirilmesi ile ilgili olan görevlerin ilk sprintte bitirilmesi planlandığından bu görevler tamamlanarak 110 puan kazanılması planlandı.
@@ -84,7 +86,9 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/sprintboard.png" alt="sprintboard" width="800"/> <br>
 
-## Sprint Review
+<details>
+  <summary><b>## Sprint Review</b> </summary>
+</details>
 
 - Proje panosu kurulmuş ve GitHub reposu oluşturulmuştur.
 - Ürünün ismi belirlenmiştir.
@@ -94,7 +98,9 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 **Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
 
-## Sprint Retrospective
+<details>
+  <summary><b>## Sprint Retrospective</b> </summary>
+</details>
 
 - Takım üyelerine gelecek sprintlerde daha fazla iş yükü olacağı hatırlatılıp, toplantıların arttırılması gerektiğine ve üyelerden Özlem Deniz Peri'nin pasif üye olarak gösterilmesine karar verilmiştir.
 
