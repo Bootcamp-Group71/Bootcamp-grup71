@@ -107,9 +107,12 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlanmıştı. Ancak bazı backlogların tamamlanmasında imkan görülemediğinden bu backloglar planlamadan çıkarılarak ikinci sprint başında projenin toplamda 305 puan olmasına karar verildi. İkinci sprintte ürünün yazılımsal teknik kısmına girileceğinden ve bu görevler tamamlanarak 130 puan kazanılması planlanmıştı.
 - **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**](https://drive.google.com/drive/folders/1sZ-vrtUpvc33O9NIl8GTeMUXrseUkW11?usp=drive_link)
 
-Sprint board update: [Sprint board ve burndown chart ekran görüntüsü]
+### Sprint board update
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/BacklogBoard2.png" alt="Backlog Board" width="800"/>
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/BurnDownChart2.png" alt="Burndown Chart" width="800"/>
 
-Ürün durumu: [Ekran görüntüleri]
+### Ürün durumu 
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/ezgif.com-crop.gif" alt="Ürün Durumu" width="800"/>
 
 <summary><h3>Sprint Review</h3></summary>
 
