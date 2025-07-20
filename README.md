@@ -97,4 +97,34 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 - Takım üyelerine gelecek sprintlerde daha fazla iş yükü olacağı hatırlatılıp, toplantıların arttırılması gerektiğine ve üyelerden Özlem Deniz Peri'nin pasif üye olarak gösterilmesine karar verilmiştir.
 
 **Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
+
+</details>
+
+<details> 
+<summary><h3>Sprint 2 Raporu</h3></summary>
+  
+- **Sprint içinde tamamlanması tahmin edilen puan:** 130 puan
+- **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlanmıştı. Ancak bazı backlogların tamamlanmasında imkan görülemediğinden bu backloglar planlamadan çıkarılarak ikinci sprint başında projenin toplamda 305 puan olmasına karar verildi. İkinci sprintte ürünün yazılımsal teknik kısmına girileceğinden ve bu görevler tamamlanarak 130 puan kazanılması planlanmıştı.
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**](https://drive.google.com/drive/folders/1sZ-vrtUpvc33O9NIl8GTeMUXrseUkW11?usp=drive_link)
+
+Sprint board update: [Sprint board ve burndown chart ekran görüntüsü]
+
+Ürün durumu: [Ekran görüntüleri]
+
+<summary><h3>Sprint Review</h3></summary>
+
+- Ürünün demo versiyonu için çeşitli modüllerin öğrenme hedefleri belirlendi.
+- Ürünün çeşitli ekranlarının UI/UX tasarımlarının ilk hali elde edildi.
+- Ürünün prototipi Figma'da oluşturuldu.
+- Ürünün backend geliştirmesine başlandı.
+
+<summary><h3>Sprint Retrospective</h3></summary>
+
+- Bazı backlogların tamamlanması için yeterli vakit olmadığına karar verilerek bu backlogların projeden çıkarılmasına karar verilmiştir.
+- Android Studio üzerinden giriş ekranlarının demosu kontrol edilmiştir, bir sorun çıkmadığına kanaat getirilmiştir.
+- Sprint 3'te bu ekranların nasıl daha iyi bir hale getirilebileceği tartışılmıştır.
+- Tasarımı yapılan ekranlar incelenmiş ve ekipçe bir sorun bulunmamıştır.
+
+**Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
+
 </details>
