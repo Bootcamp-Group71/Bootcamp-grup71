@@ -112,6 +112,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/BurnDownChart2.png" alt="Burndown Chart" width="800"/>
 
 ### Ürün durumu 
+<img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/uiux.png" alt="Ürün Durumu" width="800"/>
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/ezgif.com-crop.gif" alt="Ürün Durumu" width="800"/>
 
 <summary><h3>Sprint Review</h3></summary>
