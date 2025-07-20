@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '/utils/colors.dart';
-import '/widgets/custom_button.dart';
 import 'register_screen.dart';
 
 class SignUpScreen1 extends StatefulWidget {
