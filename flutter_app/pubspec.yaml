@@ -1,0 +1,60 @@
+name: resq_app
+description: A new Flutter project for resQ educational platform.
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI Components
+  cupertino_icons: ^1.0.2
+
+  # HTTP requests for API
+  http: ^1.1.0
+
+  # State management
+  provider: ^6.0.5
+
+  # Storage
+  shared_preferences: ^2.2.2
+
+  # Network images
+  cached_network_image: ^3.3.0
+
+  # Navigation
+  go_router: ^12.1.3
+
+  # Form validation
+  form_field_validator: ^1.1.0
+
+  # JSON handling
+  json_annotation: ^4.8.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+  json_serializable: ^6.7.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+
+  # Add app icon and assets
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # Custom fonts if needed
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       - asset: fonts/Roboto-Bold.ttf
+  #         weight: 700
