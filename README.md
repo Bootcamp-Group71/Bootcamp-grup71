@@ -8,7 +8,6 @@
 |         Başak Göğdeniz         | Scrum Master                  | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/basakgogdeniz/)    |
 |        Ömer Faruk Günay        | Developer                     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/ofarukgunay)       |
 |        Ayşenur Aydoğdu         | Developer                     | [![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)](https://www.linkedin.com/in/aysenuraydogdu-/)  |
-|        Özlem Deniz Peri        | Developer                     | ![linkedin](https://github.com/user-attachments/assets/3baa645a-33bc-4786-8327-cb0f92356f0a)                                                  |
 
 ## Ürün İsmi
 
