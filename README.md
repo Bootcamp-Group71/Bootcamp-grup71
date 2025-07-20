@@ -84,9 +84,6 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/sprintboard.png" alt="sprintboard" width="800"/>
 
-</details>
-
-<details>
 <summary><h3>Sprint Review</h3></summary>
 
 - Proje panosu kurulmuş ve GitHub reposu oluşturulmuştur.
@@ -95,15 +92,9 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 - Projenin vizyonu, hedef kitle, ürünün içeriği, rakip uygulamalar, ana eğitim modülleri ve bu modüllerin sıralamaları ve zorluk seviyeleri belirlenmiştir.
 - Ürün için logo tasarımı yapılmıştır.
 
-**Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
-
-</details>
-
-<details>
 <summary><h3>Sprint Retrospective</h3></summary>
 
 - Takım üyelerine gelecek sprintlerde daha fazla iş yükü olacağı hatırlatılıp, toplantıların arttırılması gerektiğine ve üyelerden Özlem Deniz Peri'nin pasif üye olarak gösterilmesine karar verilmiştir.
 
 **Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
-
 </details>
