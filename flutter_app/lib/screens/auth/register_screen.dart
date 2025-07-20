@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import '../../utils/colors.dart';
 import '../../widgets/custom_button.dart';
-import '../home/home_screen.dart';
+import 'login_screen.dart';
 
-class SignUpScreen3 extends StatefulWidget {
-  const SignUpScreen3({super.key});
+class SignUpScreen2 extends StatefulWidget {
+  const SignUpScreen2({super.key});
 
   @override
-  State<SignUpScreen3> createState() => _SignUpScreen3State();
+  State<SignUpScreen2> createState() => _SignUpScreen2State();
 }
 
-class _SignUpScreen3State extends State<SignUpScreen3> {
+class _SignUpScreen2State extends State<SignUpScreen2> {
   final _formKey = GlobalKey<FormState>();
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
@@ -30,7 +30,7 @@ class _SignUpScreen3State extends State<SignUpScreen3> {
         backgroundColor: AppColors.backgroundColor,
         elevation: 0,
         title: const Text(
-          'Sign Up 3',
+          'Sign Up 2',
           style: TextStyle(
             color: AppColors.darkText,
             fontSize: 16,
@@ -99,7 +99,7 @@ class _SignUpScreen3State extends State<SignUpScreen3> {
                 const SizedBox(height: 40),
 
                 const Text(
-                  'Giriş Yap',
+                  'Hesap Oluştur',
                   style: TextStyle(
                     fontSize: 24,
                     fontWeight: FontWeight.bold,
@@ -118,6 +118,10 @@ class _SignUpScreen3State extends State<SignUpScreen3> {
                     if (value == null || value.isEmpty) {
                       return 'E-posta adresi gerekli';
                     }
+                    if (!RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
+                        .hasMatch(value)) {
+                      return 'Geçerli bir e-posta adresi girin';
+                    }
                     return null;
                   },
                 ),
@@ -133,40 +137,24 @@ class _SignUpScreen3State extends State<SignUpScreen3> {
                     if (value == null || value.isEmpty) {
                       return 'Şifre gerekli';
                     }
+                    if (value.length < 6) {
+                      return 'Şifre en az 6 karakter olmalı';
+                    }
                     return null;
                   },
                 ),
 
-                const SizedBox(height: 12),
-
-                // Forgot Password
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                    onPressed: () {
-                      // Handle forgot password
-                    },
-                    child: const Text(
-                      'Şifremi Unuttum',
-                      style: TextStyle(
-                        color: AppColors.primaryBlue,
-                        fontSize: 14,
-                      ),
-                    ),
-                  ),
-                ),
-
                 const Spacer(),
 
-                // Login Button
+                // Create Account Button
                 CustomButton(
-                  text: 'Giriş yap',
+                  text: 'Hesap oluştur',
                   onPressed: () {
                     if (_formKey.currentState!.validate()) {
-                      Navigator.pushReplacement(
+                      Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomeScreen()),
+                            builder: (context) => const SignUpScreen3()),
                       );
                     }
                   },

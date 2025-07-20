@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:resq_app/screens/auth/signup_screen1.dart';
-import 'package:resq_app/screens/auth/signup_screen1.dart';
+import 'package:resq_app/screens/auth/main_screen.dart';
+import 'package:resq_app/screens/auth/main_screen.dart';
 import 'package:resq_app/screens/home/home_screen.dart';
 import 'package:resq_app/utils/colors.dart';
 

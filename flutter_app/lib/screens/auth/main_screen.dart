@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '/utils/colors.dart';
 import '/widgets/custom_button.dart';
-import 'signup_screen_2.dart';
+import 'register_screen.dart';
 
 class SignUpScreen1 extends StatefulWidget {
   const SignUpScreen1({super.key});
