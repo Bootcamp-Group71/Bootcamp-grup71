@@ -103,6 +103,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 <details> 
 <summary><h3>Sprint 2 Raporu</h3></summary>
   
+- **Sprint Notları:** Miro üzerinden ilerletilen projede bazı backloglar zaman yetersizliği sebebiyle iptal edildi, bazıları değiştirildi ve bazı görevlere atanan kişiler değişti. Bu sprintte ortada ürünün demosunun ilk adımları için tasarıma odaklanıldı. Tüm ilk yardım modüllerinin içeriklerinin yazılması yerine demo ürün için yalnızca birkaç modülün içeriğinin yazılmasına karar verdildi. Daily scrumlar bir önceki sprinte göre sıklaştırıldı.
 - **Sprint içinde tamamlanması tahmin edilen puan:** 130 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlanmıştı. Ancak bazı backlogların tamamlanmasında imkan görülemediğinden bu backloglar planlamadan çıkarılarak ikinci sprint başında projenin toplamda 305 puan olmasına karar verildi. İkinci sprintte ürünün yazılımsal teknik kısmına girileceğinden ve bu görevler tamamlanarak 130 puan kazanılması planlanmıştı.
 - **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**](https://drive.google.com/drive/folders/1sZ-vrtUpvc33O9NIl8GTeMUXrseUkW11?usp=drive_link)
