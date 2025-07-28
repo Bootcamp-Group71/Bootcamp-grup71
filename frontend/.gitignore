@@ -1,0 +1,56 @@
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+android/app/build/
+android/build/
+ios/build/
+ios/Pods/
+ios/*.xcodeproj/
+ios/*.xcworkspace/
+ios/DerivedData/
+
+# Credentials
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# cache
+.cache/
+tmp/
+temp/
+
+# IDEs and editor folders
+.vscode/
+
+# example files
+app-example
