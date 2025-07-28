@@ -1,13 +1,15 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { useRouter } from 'expo-router';
 
-export default function WelcomeScreen({ navigation }) {
+export default function WelcomeScreen() {
+  const router = useRouter();
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
         <Image source={require('../assets/logo.png')} style={styles.logo} resizeMode="contain" />
       </View>
-      <Text style={styles.title}>Hoş geldiniz!</Text>
+      <Text style={styles.title}>Hoşgeldiniz!</Text>
       <View style={styles.buttonsContainer}>
         <TouchableOpacity style={styles.button}>
           <Image source={require('../assets/btn_google.png')} style={styles.buttonImage} resizeMode="contain" />
@@ -15,12 +17,15 @@ export default function WelcomeScreen({ navigation }) {
         <TouchableOpacity style={styles.button}>
           <Image source={require('../assets/btn_apple.png')} style={styles.buttonImage} resizeMode="contain" />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push('/create-account')}>
           <Image source={require('../assets/btn_email.png')} style={styles.buttonImage} resizeMode="contain" />
         </TouchableOpacity>
       </View>
       <Text style={styles.footerText}>
-        Hesabınız var mı? <Text style={styles.loginLink}>Giriş yapın</Text>
+        Hesabınız var mı?{' '}
+        <Text style={styles.loginLink} onPress={() => router.push('/login')}>
+          Giriş yapın
+        </Text>
       </Text>
     </View>
   );
@@ -34,19 +39,19 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',
   },
   logoContainer: {
-    marginTop: 60,
+    marginTop: 100,
     marginBottom: 80,
     alignItems: 'center',
   },
   logo: {
-    width: 525,
-    height: 300,
+    width: 350,
+    height: 200,
   },
   title: {
     fontSize: 32,
     fontWeight: 'bold',
     color: '#000',
-    marginBottom: 40,
+    marginBottom: 60,
     textAlign: 'center',
   },
   buttonsContainer: {

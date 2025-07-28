@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "resq-app",
-    "slug": "resq-app",
+    "slug": "resq-app-2",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -42,7 +42,7 @@
     "extra": {
       "router": {},
       "eas": {
-        "projectId": "e7bbc415-0cf7-43fb-9a98-18edc661b268"
+        "projectId": "7ffd94eb-29b7-4a04-93e5-077ef0f5131b"
       }
     },
     "owner": "frenchianti"
