@@ -11,9 +11,13 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     DEBUG: bool = False
     
-    # Database - MongoDB
-    MONGODB_URL: str = "mongodb://localhost:27017"
-    DATABASE_NAME: str = "resq_db"
+    # Database - PostgreSQL
+    DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost:5432/resq_db"
+    
+    # Supabase Configuration
+    SUPABASE_URL: str = "https://qlblrexwpmqprrmfynum.supabase.co"
+    SUPABASE_KEY: str = "your-supabase-anon-key"
+    SUPABASE_SERVICE_KEY: str = "your-supabase-service-key"
     
     # Security
     SECRET_KEY: str = "your-secret-key-here"

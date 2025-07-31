@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.core.config import settings
-from app.core.database import connect_to_mongo, close_mongo_connection
+from app.core.database import init_db, close_db
 from app.api.v1.api import api_router
 
 app = FastAPI(
@@ -25,14 +25,14 @@ app.include_router(api_router, prefix="/api/v1")
 
 @app.on_event("startup")
 async def startup_event():
-    """Connect to MongoDB on startup."""
-    await connect_to_mongo()
+    """Initialize database on startup."""
+    await init_db()
 
 
 @app.on_event("shutdown")
 async def shutdown_event():
-    """Close MongoDB connection on shutdown."""
-    await close_mongo_connection()
+    """Close database connection on shutdown."""
+    await close_db()
 
 
 @app.get("/")

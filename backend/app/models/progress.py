@@ -1,88 +1,72 @@
-from beanie import Document
+from sqlalchemy import Column, Integer, String, Boolean, DateTime, Text, ForeignKey, Float
+from sqlalchemy.sql import func
+from sqlalchemy.orm import relationship
+from app.core.database import Base
 from datetime import datetime
 from typing import Optional
 
 
-class UserProgress(Document):
+class UserProgress(Base):
     """User progress tracking for courses and modules."""
     
-    user_id: str
-    course_id: str
-    module_id: Optional[str] = None
-    progress_percentage: float = 0.0
-    is_completed: bool = False
-    completed_at: Optional[datetime] = None
-    created_at: datetime = datetime.utcnow()
-    updated_at: Optional[datetime] = None
+    __tablename__ = "user_progress"
     
-    class Settings:
-        name = "user_progress"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    course_id = Column(Integer, ForeignKey("courses.id"), nullable=False)
+    module_id = Column(Integer, ForeignKey("modules.id"), nullable=True)
+    progress_percentage = Column(Float, default=0.0)
+    is_completed = Column(Boolean, default=False)
+    completed_at = Column(DateTime(timezone=True), nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
+    updated_at = Column(DateTime(timezone=True), onupdate=func.now())
     
-    class Config:
-        schema_extra = {
-            "example": {
-                "user_id": "user_id_here",
-                "course_id": "course_id_here",
-                "progress_percentage": 75.0,
-                "is_completed": False
-            }
-        }
+    # Relationships
+    user = relationship("User", back_populates="progress")
+    course = relationship("Course")
+    module = relationship("Module")
     
     def __repr__(self):
         return f"<UserProgress(user_id={self.user_id}, course_id={self.course_id}, progress={self.progress_percentage}%)>"
 
 
-class UserScenarioAttempt(Document):
+class UserScenarioAttempt(Base):
     """User attempts for scenarios with scores and answers."""
     
-    user_id: str
-    scenario_id: str
-    score: Optional[float] = None
-    max_score: Optional[float] = None
-    answers: Optional[str] = None  # JSON answers
-    time_taken: Optional[int] = None  # in seconds
-    is_correct: Optional[bool] = None
-    created_at: datetime = datetime.utcnow()
+    __tablename__ = "user_scenario_attempts"
     
-    class Settings:
-        name = "user_scenario_attempts"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    scenario_id = Column(Integer, ForeignKey("scenarios.id"), nullable=False)
+    score = Column(Float, nullable=True)
+    max_score = Column(Float, nullable=True)
+    answers = Column(Text, nullable=True)  # JSON answers
+    time_taken = Column(Integer, nullable=True)  # in seconds
+    is_correct = Column(Boolean, nullable=True)
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
     
-    class Config:
-        schema_extra = {
-            "example": {
-                "user_id": "user_id_here",
-                "scenario_id": "scenario_id_here",
-                "score": 85.0,
-                "max_score": 100.0,
-                "time_taken": 120
-            }
-        }
+    # Relationships
+    user = relationship("User", back_populates="scenario_attempts")
+    scenario = relationship("Scenario", back_populates="attempts")
     
     def __repr__(self):
         return f"<UserScenarioAttempt(user_id={self.user_id}, scenario_id={self.scenario_id}, score={self.score})>"
 
 
-class UserAchievement(Document):
+class UserAchievement(Base):
     """User achievements and badges."""
     
-    user_id: str
-    achievement_type: str  # badge, certificate, milestone
-    achievement_name: str
-    description: Optional[str] = None
-    earned_at: datetime = datetime.utcnow()
+    __tablename__ = "user_achievements"
     
-    class Settings:
-        name = "user_achievements"
+    id = Column(Integer, primary_key=True, index=True)
+    user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
+    achievement_type = Column(String(50), nullable=False)  # badge, certificate, milestone
+    achievement_name = Column(String(255), nullable=False)
+    description = Column(Text, nullable=True)
+    earned_at = Column(DateTime(timezone=True), server_default=func.now())
     
-    class Config:
-        schema_extra = {
-            "example": {
-                "user_id": "user_id_here",
-                "achievement_type": "badge",
-                "achievement_name": "CPR Ustası",
-                "description": "CPR modülünü başarıyla tamamladı"
-            }
-        }
+    # Relationships
+    user = relationship("User", back_populates="achievements")
     
     def __repr__(self):
         return f"<UserAchievement(user_id={self.user_id}, achievement='{self.achievement_name}')>" 
