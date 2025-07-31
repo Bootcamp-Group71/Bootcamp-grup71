@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost:5432/resq_db"
     
     # Supabase Configuration
-    SUPABASE_URL: str = "https://qlblrexwpmqprrmfynum.supabase.co"
+    SUPABASE_URL: str = "https://your-project.supabase.co"
     SUPABASE_KEY: str = "your-supabase-anon-key"
     SUPABASE_SERVICE_KEY: str = "your-supabase-service-key"
     
