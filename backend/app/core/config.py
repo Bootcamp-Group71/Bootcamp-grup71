@@ -12,15 +12,15 @@ class Settings(BaseSettings):
     DEBUG: bool = False
     
     # Database - PostgreSQL
-    DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost:5432/resq_db"
+    DATABASE_URL: str = ""
     
     # Supabase Configuration
-    SUPABASE_URL: str = "https://your-project.supabase.co"
-    SUPABASE_KEY: str = "your-supabase-anon-key"
-    SUPABASE_SERVICE_KEY: str = "your-supabase-service-key"
+    SUPABASE_URL: str = ""
+    SUPABASE_KEY: str = ""
+    SUPABASE_SERVICE_KEY: str = ""
     
     # Security
-    SECRET_KEY: str = "your-secret-key-here"
+    SECRET_KEY: str = ""
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
     

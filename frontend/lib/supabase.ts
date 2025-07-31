@@ -3,10 +3,10 @@ import { createClient } from "@supabase/supabase-js";
 import Constants from "expo-constants";
 
 const supabaseUrl =
-  Constants.expoConfig?.extra?.supabaseUrl ||
+  process.env.EXPO_PUBLIC_SUPABASE_URL ||
   "https://qlblrexwpmqprrmfynum.supabase.co";
 const supabaseAnonKey =
-  Constants.expoConfig?.extra?.supabaseAnonKey ||
+  process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY ||
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFsYmxyZXh3cG1xcHJybWZ5bnVtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTM5OTA1ODUsImV4cCI6MjA2OTU2NjU4NX0.aiIr0Gd6W_xvQukzaNMlbvj3ZKWZT4cDhhrCE6CzPsA";
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {

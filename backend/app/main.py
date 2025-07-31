@@ -26,7 +26,7 @@ app.include_router(api_router, prefix="/api/v1")
 @app.on_event("startup")
 async def startup_event():
     """Initialize database on startup."""
-    await init_db()
+    # await init_db()  # Temporarily disabled until database schema is created
 
 
 @app.on_event("shutdown")
