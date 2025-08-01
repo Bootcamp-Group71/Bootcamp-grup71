@@ -20,14 +20,18 @@ export default function CreateAccountScreen({ navigation }) {
     }));
   };
 
+  // Tek görsel kullan
+  const courseImage = require('../assets/courses_grid.png');
+
+  // Her kart için aynı görseli kullan, ama farklı pozisyonlarda göster
+
   return (
     <ScrollView style={styles.container}>
       {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
-          <Text style={styles.backButtonText}>←</Text>
+          <Image source={require('../assets/back_button.png')} style={styles.backIcon} resizeMode="contain" />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Hesap Oluştur</Text>
       </View>
 
       {/* Logo */}
@@ -95,7 +99,7 @@ export default function CreateAccountScreen({ navigation }) {
         </View>
 
         {/* Buttons */}
-        <TouchableOpacity style={styles.createAccountButton}>
+        <TouchableOpacity style={styles.createAccountButton} onPress={() => router.push('/home')}>
           <Text style={styles.createAccountButtonText}>Hesap Oluştur</Text>
         </TouchableOpacity>
         
@@ -107,7 +111,7 @@ export default function CreateAccountScreen({ navigation }) {
       {/* Footer */}
       <View style={styles.footer}>
         <Text style={styles.footerText}>
-          Zaten hesabın var mı? <Text style={styles.loginLink}>Giriş yap</Text>
+          Zaten hesabın var mı? <Text style={styles.loginLink} onPress={() => router.push('/login')}>Giriş yap</Text>
         </Text>
       </View>
     </ScrollView>
@@ -123,16 +127,26 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingTop: 10,
-    paddingBottom: 20,
+    paddingTop: 5,
+    paddingBottom: 10,
   },
   backButton: {
-    padding: 10,
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#FFF',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 3,
     marginRight: 10,
   },
-  backButtonText: {
-    fontSize: 24,
-    color: '#333',
+  backIcon: {
+    width: 20,
+    height: 20,
   },
   headerTitle: {
     flex: 1,
@@ -143,8 +157,8 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     alignItems: 'center',
-    marginTop: 20,
-    marginBottom: 30,
+    marginTop: 10,
+    marginBottom: 25,
   },
   logo: {
     width: 300,
@@ -152,7 +166,7 @@ const styles = StyleSheet.create({
   },
   welcomeContainer: {
     alignItems: 'center',
-    marginBottom: 40,
+    marginBottom: 30,
   },
   welcomeTitle: {
     fontSize: 28,

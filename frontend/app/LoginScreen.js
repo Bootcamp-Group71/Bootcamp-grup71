@@ -50,7 +50,7 @@ export default function LoginScreen() {
               <Text style={styles.eyeIcon}>{showPassword ? '👁️' : '👁️‍🗨️'}</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={styles.loginButton}>
+          <TouchableOpacity style={styles.loginButton} onPress={() => router.push('/home')}>
             <Text style={styles.loginButtonText}>Giriş yap</Text>
           </TouchableOpacity>
         </View>
