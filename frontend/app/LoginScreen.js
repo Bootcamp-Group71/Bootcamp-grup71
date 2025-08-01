@@ -1,28 +1,88 @@
-import React, { useState } from 'react';
-import { View, Text, Image, StyleSheet, TextInput, TouchableOpacity, KeyboardAvoidingView, Platform, ScrollView } from 'react-native';
-import { useRouter } from 'expo-router';
+import React, { useState, useEffect } from "react";
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  Alert,
+} from "react-native";
+import { useRouter, useLocalSearchParams } from "expo-router";
+import authService from "../services/authService";
 
 export default function LoginScreen() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
-    email: '',
-    password: ''
+    email: "",
+    password: "",
   });
   const router = useRouter();
+  const params = useLocalSearchParams();
+
+  // Kayıt sayfasından gelen verileri al - sadece ilk render'da çalışır
+  useEffect(() => {
+    if (params.email && params.password) {
+      setFormData({
+        email: params.email,
+        password: params.password,
+      });
+    }
+  }, []); // Boş dependency array - sadece component mount olduğunda çalışır
 
   const handleInputChange = (field, value) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
+  };
+
+  const validateForm = () => {
+    if (!formData.email.trim()) {
+      Alert.alert("Hata", "E-posta alanı boş olamaz!");
+      return false;
+    }
+    if (!formData.password.trim()) {
+      Alert.alert("Hata", "Şifre alanı boş olamaz!");
+      return false;
+    }
+    return true;
+  };
+
+  const handleLogin = async () => {
+    if (!validateForm()) {
+      return;
+    }
+
+    try {
+      const result = await authService.login(formData.email, formData.password);
+      Alert.alert("Başarılı!", result.message, [
+        {
+          text: "Tamam",
+          onPress: () => router.push("/home"),
+        },
+      ]);
+    } catch (error) {
+      Alert.alert("Hata", error.message);
+    }
   };
 
   return (
     <KeyboardAvoidingView
       style={{ flex: 1 }}
-      behavior={Platform.OS === 'ios' ? 'padding' : undefined}
+      behavior={Platform.OS === "ios" ? "padding" : undefined}
     >
-      <ScrollView style={styles.container} contentContainerStyle={{ flexGrow: 1 }}>
+      <ScrollView
+        style={styles.container}
+        contentContainerStyle={{ flexGrow: 1 }}
+      >
         {/* Logo */}
         <View style={styles.logoContainer}>
-          <Image source={require('../assets/logo.png')} style={styles.logo} resizeMode="contain" />
+          <Image
+            source={require("../assets/logo.png")}
+            style={styles.logo}
+            resizeMode="contain"
+          />
         </View>
         {/* Title */}
         <Text style={styles.title}>Giriş Yap</Text>
@@ -33,7 +93,7 @@ export default function LoginScreen() {
             placeholder="E-posta adresi"
             placeholderTextColor="#999"
             value={formData.email}
-            onChangeText={text => handleInputChange('email', text)}
+            onChangeText={(text) => handleInputChange("email", text)}
             autoCapitalize="none"
             keyboardType="email-address"
           />
@@ -44,20 +104,25 @@ export default function LoginScreen() {
               placeholderTextColor="#999"
               secureTextEntry={!showPassword}
               value={formData.password}
-              onChangeText={text => handleInputChange('password', text)}
+              onChangeText={(text) => handleInputChange("password", text)}
             />
-            <TouchableOpacity style={styles.eyeButton} onPress={() => setShowPassword(!showPassword)}>
-              <Text style={styles.eyeIcon}>{showPassword ? '👁️' : '👁️‍🗨️'}</Text>
+            <TouchableOpacity
+              style={styles.eyeButton}
+              onPress={() => setShowPassword(!showPassword)}
+            >
+              <Text style={styles.eyeIcon}>{showPassword ? "👁️" : "👁️‍🗨️"}</Text>
             </TouchableOpacity>
           </View>
-          <TouchableOpacity style={styles.loginButton} onPress={() => router.push('/home')}>
+          <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
             <Text style={styles.loginButtonText}>Giriş yap</Text>
           </TouchableOpacity>
         </View>
         {/* Footer */}
         <View style={styles.footer}>
           <Text style={styles.footerText}>
-            Bir hesap oluşturarak veya oturum açarak, <Text style={styles.link}>Şartlar ve Koşullarımızı</Text> kabul etmiş olursunuz.
+            Bir hesap oluşturarak veya oturum açarak,{" "}
+            <Text style={styles.link}>Şartlar ve Koşullarımızı</Text> kabul
+            etmiş olursunuz.
           </Text>
         </View>
       </ScrollView>
@@ -68,10 +133,10 @@ export default function LoginScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FDF6F6',
+    backgroundColor: "#FDF6F6",
   },
   logoContainer: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 40,
     marginBottom: 30,
   },
@@ -83,9 +148,9 @@ const styles = StyleSheet.create({
 
   title: {
     fontSize: 36,
-    fontWeight: 'bold',
-    color: '#000',
-    textAlign: 'center',
+    fontWeight: "bold",
+    color: "#000",
+    textAlign: "center",
     marginBottom: 32,
   },
   formContainer: {
@@ -93,22 +158,22 @@ const styles = StyleSheet.create({
     marginBottom: 40,
   },
   input: {
-    backgroundColor: '#FFF',
+    backgroundColor: "#FFF",
     borderRadius: 12,
     paddingHorizontal: 15,
     paddingVertical: 15,
     marginBottom: 15,
     fontSize: 16,
     borderWidth: 1,
-    borderColor: '#E0E0E0',
+    borderColor: "#E0E0E0",
   },
   passwordContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    backgroundColor: '#FFF',
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#FFF",
     borderRadius: 12,
     borderWidth: 1,
-    borderColor: '#E0E0E0',
+    borderColor: "#E0E0E0",
     marginBottom: 15,
   },
   passwordInput: {
@@ -122,34 +187,34 @@ const styles = StyleSheet.create({
   },
   eyeIcon: {
     fontSize: 20,
-    color: '#999',
+    color: "#999",
   },
   loginButton: {
-    backgroundColor: '#001E5A',
+    backgroundColor: "#001E5A",
     borderRadius: 14,
     paddingVertical: 16,
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 10,
     marginBottom: 10,
   },
   loginButtonText: {
-    color: '#FFF',
+    color: "#FFF",
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   footer: {
-    alignItems: 'center',
+    alignItems: "center",
     paddingHorizontal: 20,
     marginTop: 20,
     marginBottom: 30,
   },
   footerText: {
     fontSize: 15,
-    color: '#444',
-    textAlign: 'center',
+    color: "#444",
+    textAlign: "center",
   },
   link: {
-    textDecorationLine: 'underline',
-    fontWeight: 'bold',
+    textDecorationLine: "underline",
+    fontWeight: "bold",
   },
-}); 
+});
