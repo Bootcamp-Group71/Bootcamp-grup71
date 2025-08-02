@@ -133,3 +133,32 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 **Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay, Yusuf Sabri Karakoyun
 
 </details>
+
+<details> 
+<summary><h3>Sprint 3 Raporu</h3></summary>
+  
+- **Sprint Notları:** Miro üzerinden bazı backloglara atanan kişiler değiştirildi. Sprint 2’den kalan “Sıkça Sorulan Sorular (SSS) alanı için temel başlıkların belirlenmesi” backlogu bu sprintte de tamamlanamadı. Bu göreve atanmış olan Yusuf Sabri Karakoyun’un bu sprinte katkı sağlamamış olması gerekçesiyle Sprint 3 için pasif üye olarak belirlenmesine karar verildi. Frontend ve backend geliştirmesi ürünün demosunu oluşturmaya yetecek şekilde tamamlandı.
+- **Sprint içinde tamamlanması tahmin edilen puan:** 65 puan
+- **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlanmıştı. Ancak bazı backlogların tamamlanmasında imkan görülemediğinden bu backloglar planlamadan çıkarılarak ikinci sprint başında projenin toplamda 305 puan olmasına karar verildi. Üçüncü sprintte kalan 65 puanlık backlogun tamamlanmasına karar verilmişti. Bütün backloglar tamamlanarak 65 puan elde edildi.
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**]()
+
+### Sprint board update
+
+### Ürün durumu 
+
+<summary><h3>Sprint Review</h3></summary>
+
+- Uygulamanın ekranlarının UI/UX tasarımlarının frontend geliştirmesi tamamlandı.
+- Uygulamanın backend geliştirmesi tamamlandı.
+- Veritabanı yapısı kuruldu.
+- Uygulamanın son testleri yapıldı.
+
+<summary><h3>Sprint Retrospective</h3></summary>
+
+- Frontend testleri yapılıp bir hata bulunamamıştır.
+- Database testleri yapılıp bir hata bulunamamıştır.
+- Uygulamanın demosunun yeterli olduğuna karar verilmiştir.
+
+**Katılımcılar:** Başak Göğdeniz, Ayşenur Aydoğdu, Ömer Faruk Günay
+
+</details>
