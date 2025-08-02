@@ -2,21 +2,23 @@ from datetime import timedelta
 from typing import Any
 from fastapi import APIRouter, HTTPException, status, Depends
 from fastapi.security import OAuth2PasswordRequestForm
+from sqlalchemy.ext.asyncio import AsyncSession
 from app.core.security import create_access_token
 from app.crud.user import user_crud
 from app.schemas.user import User, UserCreate, Token
-from app.api.deps import get_current_active_user
+from app.api.deps import get_current_active_user, get_db
 
 router = APIRouter()
 
 @router.post("/register", response_model=User)
 async def register(
     user_in: UserCreate,
+    db: AsyncSession = Depends(get_db)
 ) -> Any:
     """
     Create new user.
     """
-    user = await user_crud.get_by_email(user_in.email)
+    user = await user_crud.get_by_email(db, user_in.email)
     if user:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -27,23 +29,24 @@ async def register(
     if not user_in.username:
         user_in.username = user_in.email.split('@')[0]
     
-    user = await user_crud.get_by_username(user_in.username)
+    user = await user_crud.get_by_username(db, user_in.username)
     if user:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail="Bu kullanıcı adı zaten kullanılıyor."
         )
-    user = await user_crud.create(user_in)
+    user = await user_crud.create(db, user_in)
     return user
 
 @router.post("/login", response_model=Token)
 async def login(
-    form_data: OAuth2PasswordRequestForm = Depends()
+    form_data: OAuth2PasswordRequestForm = Depends(),
+    db: AsyncSession = Depends(get_db)
 ) -> Any:
     """
     OAuth2 compatible token login, get an access token for future requests.
     """
-    user = await user_crud.authenticate(email=form_data.username, password=form_data.password)
+    user = await user_crud.authenticate(db, email=form_data.username, password=form_data.password)
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,

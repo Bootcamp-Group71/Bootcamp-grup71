@@ -1,4 +1,6 @@
 from typing import Optional, List
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import select
 from app.models.user import User
 from app.schemas.user import UserCreate, UserUpdate
 from app.core.security import get_password_hash, verify_password
@@ -6,36 +8,45 @@ from datetime import datetime
 
 
 class UserCRUD:
-    """CRUD operations for User model using Beanie."""
+    """CRUD operations for User model using SQLAlchemy."""
     
-    async def get(self, user_id: str) -> Optional[User]:
+    async def get(self, db: AsyncSession, user_id: int) -> Optional[User]:
         """Get user by ID."""
-        return await User.get(user_id)
+        result = await db.execute(select(User).where(User.id == user_id))
+        return result.scalar_one_or_none()
     
-    async def get_by_email(self, email: str) -> Optional[User]:
+    async def get_by_email(self, db: AsyncSession, email: str) -> Optional[User]:
         """Get user by email."""
-        return await User.find_one(User.email == email)
+        result = await db.execute(select(User).where(User.email == email))
+        return result.scalar_one_or_none()
     
-    async def get_by_username(self, username: str) -> Optional[User]:
+    async def get_by_username(self, db: AsyncSession, username: str) -> Optional[User]:
         """Get user by username."""
-        return await User.find_one(User.username == username)
+        result = await db.execute(select(User).where(User.username == username))
+        return result.scalar_one_or_none()
     
-    async def get_multi(self, skip: int = 0, limit: int = 100) -> List[User]:
+    async def get_multi(self, db: AsyncSession, skip: int = 0, limit: int = 100) -> List[User]:
         """Get multiple users with pagination."""
-        return await User.find_all().skip(skip).limit(limit).to_list()
+        result = await db.execute(select(User).offset(skip).limit(limit))
+        return result.scalars().all()
     
-    async def create(self, obj_in: UserCreate) -> User:
+    async def create(self, db: AsyncSession, obj_in: UserCreate) -> User:
         """Create a new user."""
         hashed_password = get_password_hash(obj_in.password)
         db_obj = User(
             email=obj_in.email,
             username=obj_in.username,
             hashed_password=hashed_password,
-            full_name=obj_in.full_name
+            full_name=obj_in.full_name,
+            is_active=True,
+            is_superuser=False
         )
-        return await db_obj.insert()
+        db.add(db_obj)
+        await db.commit()
+        await db.refresh(db_obj)
+        return db_obj
     
-    async def update(self, db_obj: User, obj_in: UserUpdate) -> User:
+    async def update(self, db: AsyncSession, db_obj: User, obj_in: UserUpdate) -> User:
         """Update user information."""
         update_data = obj_in.dict(exclude_unset=True)
         
@@ -46,20 +57,22 @@ class UserCRUD:
             setattr(db_obj, field, value)
         
         db_obj.updated_at = datetime.utcnow()
-        await db_obj.save()
+        await db.commit()
+        await db.refresh(db_obj)
         return db_obj
     
-    async def delete(self, user_id: str) -> bool:
+    async def delete(self, db: AsyncSession, user_id: int) -> bool:
         """Delete a user."""
-        user = await User.get(user_id)
+        user = await self.get(db, user_id)
         if user:
-            await user.delete()
+            await db.delete(user)
+            await db.commit()
             return True
         return False
     
-    async def authenticate(self, email: str, password: str) -> Optional[User]:
+    async def authenticate(self, db: AsyncSession, email: str, password: str) -> Optional[User]:
         """Authenticate user with email and password."""
-        user = await self.get_by_email(email=email)
+        user = await self.get_by_email(db, email=email)
         if not user:
             return None
         if not verify_password(password, user.hashed_password):
