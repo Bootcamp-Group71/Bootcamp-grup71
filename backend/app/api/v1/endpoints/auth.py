@@ -29,12 +29,13 @@ async def register(
     if not user_in.username:
         user_in.username = user_in.email.split('@')[0]
     
-    user = await user_crud.get_by_username(db, user_in.username)
-    if user:
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Bu kullanıcı adı zaten kullanılıyor."
-        )
+    # Username kontrolünü kaldır çünkü email zaten unique
+    # user = await user_crud.get_by_username(db, user_in.username)
+    # if user:
+    #     raise HTTPException(
+    #         status_code=status.HTTP_400_BAD_REQUEST,
+    #         detail="Bu kullanıcı adı zaten kullanılıyor."
+    #     )
     user = await user_crud.create(db, user_in)
     return user
 
