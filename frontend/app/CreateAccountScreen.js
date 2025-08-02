@@ -10,7 +10,7 @@ import {
   Alert,
 } from "react-native";
 import { useRouter } from "expo-router";
-import authService from "../services/authService";
+import apiService from "../services/apiService";
 
 export default function CreateAccountScreen({ navigation }) {
   const router = useRouter();
@@ -60,7 +60,7 @@ export default function CreateAccountScreen({ navigation }) {
     }
 
     try {
-      await authService.register(formData);
+      await apiService.register(formData);
       Alert.alert(
         "Başarılı!",
         "Hesabınız başarıyla oluşturuldu. Giriş yapabilirsiniz.",

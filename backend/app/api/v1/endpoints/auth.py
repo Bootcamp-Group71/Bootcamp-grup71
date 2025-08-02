@@ -20,13 +20,18 @@ async def register(
     if user:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="A user with this email already exists."
+            detail="Bu email adresi zaten kayıtlı."
         )
+    
+    # Username'i email'den oluştur (eğer verilmemişse)
+    if not user_in.username:
+        user_in.username = user_in.email.split('@')[0]
+    
     user = await user_crud.get_by_username(user_in.username)
     if user:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="A user with this username already exists."
+            detail="Bu kullanıcı adı zaten kullanılıyor."
         )
     user = await user_crud.create(user_in)
     return user
@@ -42,13 +47,13 @@ async def login(
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Incorrect email or password",
+            detail="Email veya şifre hatalı",
             headers={"WWW-Authenticate": "Bearer"},
         )
     elif not user_crud.is_active(user):
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Inactive user"
+            detail="Pasif kullanıcı"
         )
     access_token_expires = timedelta(minutes=30)
     return {

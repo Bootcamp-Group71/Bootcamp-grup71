@@ -9,7 +9,7 @@ import {
   Text,
 } from "react-native";
 import { useRouter } from "expo-router";
-import authService from "../services/authService";
+import apiService from "../services/apiService";
 
 export default function ProfileScreen() {
   const router = useRouter();
@@ -20,12 +20,12 @@ export default function ProfileScreen() {
 
   // Kullanıcı bilgilerini yükle
   useEffect(() => {
-    const loadUserInfo = () => {
+    const loadUserInfo = async () => {
       try {
-        const currentUser = authService.getCurrentUser();
+        const currentUser = await apiService.getCurrentUser();
         if (currentUser) {
           setUserInfo({
-            fullName: currentUser.fullName || "Kullanıcı",
+            fullName: currentUser.full_name || "Kullanıcı",
             email: currentUser.email || "user@gmail.com",
           });
         }
@@ -140,9 +140,9 @@ export default function ProfileScreen() {
           {/* Çıkış Yap */}
           <TouchableOpacity
             style={[styles.menuItem, styles.logoutItem]}
-            onPress={() => {
+            onPress={async () => {
               try {
-                authService.logout();
+                await apiService.logout();
                 router.push("/login");
               } catch (error) {
                 console.log("Çıkış yapılırken hata:", error);

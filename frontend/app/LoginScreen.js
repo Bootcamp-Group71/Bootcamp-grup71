@@ -12,7 +12,7 @@ import {
   Alert,
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
-import authService from "../services/authService";
+import apiService from "../services/apiService";
 
 export default function LoginScreen() {
   const [showPassword, setShowPassword] = useState(false);
@@ -55,7 +55,7 @@ export default function LoginScreen() {
     }
 
     try {
-      const result = await authService.login(formData.email, formData.password);
+      const result = await apiService.login(formData.email, formData.password);
       Alert.alert("Başarılı!", result.message, [
         {
           text: "Tamam",
