@@ -16,3 +16,4 @@ psycopg2-binary==2.9.9
 supabase==2.3.4
 redis==5.0.1
 celery==5.3.4
+email-validator==2.1.0
