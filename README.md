@@ -109,10 +109,12 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 - **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**](https://drive.google.com/drive/folders/1sZ-vrtUpvc33O9NIl8GTeMUXrseUkW11?usp=drive_link)
 
 ### Sprint board update
+
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/BacklogBoard2.png" alt="Backlog Board" width="800"/>
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/BurnDownChart2.png" alt="Burndown Chart" width="800"/>
 
-### Ürün durumu 
+### Ürün durumu
+
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/uiux.png" alt="Ürün Durumu" width="800"/>
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/ezgif.com-crop.gif" alt="Ürün Durumu" width="800"/>
 
@@ -144,7 +146,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 ### Sprint board update
 
-### Ürün durumu 
+### Ürün durumu
 
 <summary><h3>Sprint Review</h3></summary>
 

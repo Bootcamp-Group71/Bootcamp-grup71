@@ -25,7 +25,8 @@ export default function ProfileScreen() {
         const currentUser = await apiService.getCurrentUser();
         if (currentUser) {
           setUserInfo({
-            fullName: currentUser.full_name || "Kullanıcı",
+            fullName:
+              currentUser.fullName || currentUser.full_name || "Kullanıcı",
             email: currentUser.email || "user@gmail.com",
           });
         }

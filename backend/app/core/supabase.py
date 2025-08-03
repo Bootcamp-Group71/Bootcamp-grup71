@@ -1,12 +1,15 @@
-from supabase import create_client, Client
+# Supabase bağımlılığı yoruma alındı - Local çalışma için
+# from supabase import create_client, Client
 from app.core.config import settings
 
 
-def get_supabase_client() -> Client:
-    """Get Supabase client instance."""
-    return create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)
+def get_supabase_client():
+    """Get Supabase client instance - YORUMA ALINDI."""
+    # return create_client(settings.SUPABASE_URL, settings.SUPABASE_KEY)
+    raise NotImplementedError("Supabase bağlantısı local çalışma için devre dışı bırakıldı")
 
 
-def get_supabase_service_client() -> Client:
-    """Get Supabase service client instance with admin privileges."""
-    return create_client(settings.SUPABASE_URL, settings.SUPABASE_SERVICE_KEY) 
+def get_supabase_service_client():
+    """Get Supabase service client instance with admin privileges - YORUMA ALINDI."""
+    # return create_client(settings.SUPABASE_URL, settings.SUPABASE_SERVICE_KEY)
+    raise NotImplementedError("Supabase service bağlantısı local çalışma için devre dışı bırakıldı") 

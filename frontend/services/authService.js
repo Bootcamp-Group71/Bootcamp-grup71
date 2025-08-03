@@ -2,16 +2,7 @@
 class AuthService {
   constructor() {
     // In-memory storage
-    this.users = [
-      // Test kullanıcısı
-      {
-        id: "1",
-        fullName: "Test Kullanıcı",
-        email: "test@example.com",
-        password: "123456",
-        createdAt: new Date().toISOString(),
-      },
-    ];
+    this.users = []; // Boş başlat, test kullanıcısı yok
     this.currentUser = null;
   }
 
