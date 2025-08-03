@@ -80,7 +80,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 110 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlandı. Ürünün içeriği ve projenin iskeletinin şekillendirilmesi ile ilgili olan görevlerin ilk sprintte bitirilmesi planlandığından bu görevler tamamlanarak 110 puan kazanılması planlandı.
-- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 1- Daily Scrum Chats**](https://imgur.com/a/vgc97Ck)
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 1 - Daily Scrum Meetings**](https://imgur.com/a/vgc97Ck)
 
 <img src="https://github.com/aysenuraydogdu/Bootcamp-grup71/blob/main/images/sprintboard.png" alt="sprintboard" width="800"/>
 
@@ -106,7 +106,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 - **Sprint Notları:** Miro üzerinden ilerletilen projede bazı backloglar zaman yetersizliği sebebiyle iptal edildi, bazıları değiştirildi ve bazı görevlere atanan kişiler değişti. Bu sprintte ortada ürünün demosunun ilk adımları için tasarıma odaklanıldı. Tüm ilk yardım modüllerinin içeriklerinin yazılması yerine demo ürün için yalnızca birkaç modülün içeriğinin yazılmasına karar verdildi. Daily scrumlar bir önceki sprinte göre sıklaştırıldı.
 - **Sprint içinde tamamlanması tahmin edilen puan:** 130 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlanmıştı. Ancak bazı backlogların tamamlanmasında imkan görülemediğinden bu backloglar planlamadan çıkarılarak ikinci sprint başında projenin toplamda 305 puan olmasına karar verildi. İkinci sprintte ürünün yazılımsal teknik kısmına girileceğinden ve bu görevler tamamlanarak 130 puan kazanılması planlanmıştı.
-- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**](https://drive.google.com/drive/folders/1sZ-vrtUpvc33O9NIl8GTeMUXrseUkW11?usp=drive_link)
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2 - Daily Scrum Meetings**](https://drive.google.com/drive/folders/1sZ-vrtUpvc33O9NIl8GTeMUXrseUkW11?usp=drive_link)
 
 ### Sprint board update
 
@@ -142,7 +142,7 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 - **Sprint Notları:** Miro üzerinden bazı backloglara atanan kişiler değiştirildi. Sprint 2’den kalan “Sıkça Sorulan Sorular (SSS) alanı için temel başlıkların belirlenmesi” backlogu bu sprintte de tamamlanamadı. Bu göreve atanmış olan Yusuf Sabri Karakoyun’un bu sprinte katkı sağlamamış olması gerekçesiyle Sprint 3 için pasif üye olarak belirlenmesine karar verildi. Frontend ve backend geliştirmesi ürünün demosunu oluşturmaya yetecek şekilde tamamlandı.
 - **Sprint içinde tamamlanması tahmin edilen puan:** 65 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlanmıştı. Ancak bazı backlogların tamamlanmasında imkan görülemediğinden bu backloglar planlamadan çıkarılarak ikinci sprint başında projenin toplamda 305 puan olmasına karar verildi. Üçüncü sprintte kalan 65 puanlık backlogun tamamlanmasına karar verilmişti. Bütün backloglar tamamlanarak 65 puan elde edildi.
-- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**](https://imgur.com/a/FZJMcCj)
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 3 - Daily Scrum Meetings**](https://imgur.com/a/FZJMcCj)
 
 ### Sprint board update
 
