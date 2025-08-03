@@ -60,7 +60,16 @@ export default function CreateAccountScreen({ navigation }) {
     }
 
     try {
-      await apiService.register(formData);
+      const result = await apiService.register(formData);
+      
+      // Store user data
+      apiService.storeUser({
+        id: result.user.id,
+        email: formData.email,
+        fullName: formData.fullName,
+        full_name: formData.fullName
+      });
+      
       Alert.alert(
         "Başarılı!",
         "Hesabınız başarıyla oluşturuldu. Giriş yapabilirsiniz.",
@@ -338,4 +347,4 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textDecorationLine: "underline",
   },
-});
+}); 

@@ -2,31 +2,30 @@ import React from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { useRouter } from 'expo-router';
 
-export default function WelcomeScreen() {
+export default function WelcomeScreen({ navigation }) {
   const router = useRouter();
   return (
     <View style={styles.container}>
       <View style={styles.logoContainer}>
         <Image source={require('../assets/logo.png')} style={styles.logo} resizeMode="contain" />
       </View>
-      <Text style={styles.title}>Hoşgeldiniz!</Text>
+      <Text style={styles.title}>Hoş geldiniz!</Text>
       <View style={styles.buttonsContainer}>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push('/login')}>
           <Image source={require('../assets/btn_google.png')} style={styles.buttonImage} resizeMode="contain" />
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={() => router.push('/login')}>
           <Image source={require('../assets/btn_apple.png')} style={styles.buttonImage} resizeMode="contain" />
         </TouchableOpacity>
         <TouchableOpacity style={styles.button} onPress={() => router.push('/create-account')}>
           <Image source={require('../assets/btn_email.png')} style={styles.buttonImage} resizeMode="contain" />
         </TouchableOpacity>
       </View>
-      <Text style={styles.footerText}>
-        Hesabınız var mı?{' '}
-        <Text style={styles.loginLink} onPress={() => router.push('/login')}>
-          Giriş yapın
+      <TouchableOpacity onPress={() => router.push('/login')}>
+        <Text style={styles.footerText}>
+          Hesabınız var mı? <Text style={styles.loginLink}>Giriş yapın</Text>
         </Text>
-      </Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -37,27 +36,27 @@ const styles = StyleSheet.create({
     backgroundColor: '#FDF6F6',
     alignItems: 'center',
     justifyContent: 'flex-start',
+    paddingTop: 40,
   },
   logoContainer: {
-    marginTop: 100,
-    marginBottom: 80,
+    marginBottom: 50,
     alignItems: 'center',
   },
   logo: {
-    width: 350,
-    height: 200,
+    width: 525,
+    height: 300,
   },
   title: {
     fontSize: 32,
     fontWeight: 'bold',
     color: '#000',
-    marginBottom: 60,
+    marginBottom: 30,
     textAlign: 'center',
   },
   buttonsContainer: {
     width: '100%',
     alignItems: 'center',
-    marginBottom: 60,
+    marginBottom: 30,
   },
   button: {
     marginVertical: 8,
@@ -67,13 +66,11 @@ const styles = StyleSheet.create({
     height: 60,
   },
   footerText: {
-    position: 'absolute',
-    bottom: 50,
-    left: 0,
-    right: 0,
     textAlign: 'center',
     color: '#888',
     fontSize: 15,
+    marginTop: 20,
+    marginBottom: 20,
   },
   loginLink: {
     color: '#000',

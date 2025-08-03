@@ -99,9 +99,12 @@ export default function ProfileScreen() {
             </View>
           </TouchableOpacity>
 
-          {/* Geçmiş */}
-          <TouchableOpacity style={styles.menuItem}>
-            <Text style={styles.menuText}>Geçmiş</Text>
+          {/* Sıkça Sorulan Sorular */}
+          <TouchableOpacity
+            style={styles.menuItem}
+            onPress={() => router.push("/sss")}
+          >
+            <Text style={styles.menuText}>Sıkça Sorulan Sorular (SSS)</Text>
             <View style={styles.arrowContainer}>
               <Image
                 source={require("../assets/forward_arrow.png")}
@@ -382,4 +385,4 @@ const styles = StyleSheet.create({
   logoutArrow: {
     backgroundColor: "#DC2626",
   },
-});
+}); 

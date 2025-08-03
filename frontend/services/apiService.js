@@ -1,86 +1,101 @@
-// Backend API servisi - LOCAL AUTH SERVICE KULLANILIYOR
-// PRODUCTION URL - YORUMA ALINDI
-// const API_BASE_URL = "https://bootcamp-grup71-production.up.railway.app/api/v1";
-
-// LOCAL URL - YORUMA ALINDI (Local auth service kullanıyoruz)
-// const API_BASE_URL = "http://localhost:8000/api/v1";
-
-// Local Auth Service kullanıyoruz
-import authService from "./authService";
-
+// API Service for backend integration
 class ApiService {
-  // Kullanıcı kaydı
-  async register(userData) {
-    try {
-      return await authService.register(userData);
-    } catch (error) {
-      throw error;
-    }
+  constructor() {
+    this.baseURL = 'http://localhost:3000/api'; // Backend URL
   }
 
-  // Kullanıcı girişi
+  // Login method
   async login(email, password) {
     try {
-      return await authService.login(email, password);
+      // Simulate API call for now
+      console.log('Login attempt:', { email, password });
+      
+      // For development, return success
+      return {
+        success: true,
+        message: 'Giriş başarılı!',
+        user: {
+          id: 1,
+          email: email,
+          fullName: 'Test User',
+          full_name: 'Test User'
+        }
+      };
     } catch (error) {
-      throw error;
+      throw new Error('Giriş yapılırken hata oluştu');
     }
   }
 
-  // Kullanıcı çıkışı
-  async logout() {
+  // Register method
+  async register(userData) {
     try {
-      return await authService.logout();
+      // Simulate API call for now
+      console.log('Register attempt:', userData);
+      
+      // For development, return success
+      return {
+        success: true,
+        message: 'Kayıt başarılı!',
+        user: {
+          id: 1,
+          email: userData.email,
+          fullName: userData.fullName,
+          full_name: userData.fullName
+        }
+      };
     } catch (error) {
-      throw error;
+      throw new Error('Kayıt olurken hata oluştu');
     }
   }
 
-  // Mevcut kullanıcı bilgilerini al
+  // Get current user
   async getCurrentUser() {
     try {
-      return authService.getCurrentUser();
+      // Simulate API call for now
+      // Get stored user data from localStorage or AsyncStorage
+      const storedUser = this.getStoredUser();
+      return storedUser || {
+        id: 1,
+        email: 'user@gmail.com',
+        fullName: 'Kullanıcı',
+        full_name: 'Kullanıcı'
+      };
     } catch (error) {
+      console.log('Kullanıcı bilgileri alınamadı:', error);
       return null;
     }
   }
 
-  // Kursları getir (Mock data)
-  async getCourses() {
+  // Store user data (simulate localStorage)
+  storeUser(userData) {
     try {
-      // Mock kurs verisi
-      return [
-        {
-          id: 1,
-          title: "Temel İlk Yardım",
-          description: "Acil durumlarda temel müdahale teknikleri",
-          duration: "2 saat",
-          level: "Başlangıç",
-        },
-        {
-          id: 2,
-          title: "CPR Teknikleri",
-          description: "Kalp masajı ve suni teneffüs",
-          duration: "1.5 saat",
-          level: "Orta",
-        },
-        {
-          id: 3,
-          title: "Kanama Kontrolü",
-          description: "Farklı kanama türlerinde müdahale",
-          duration: "1 saat",
-          level: "Başlangıç",
-        },
-      ];
+      // In a real app, you'd use AsyncStorage
+      // For now, we'll store in memory
+      this.currentUser = userData;
     } catch (error) {
-      throw error;
+      console.log('Kullanıcı bilgileri kaydedilemedi:', error);
     }
   }
 
-  // Kullanıcının giriş yapıp yapmadığını kontrol et
-  async isLoggedIn() {
-    return authService.isLoggedIn();
+  // Get stored user data
+  getStoredUser() {
+    return this.currentUser || null;
+  }
+
+  // Logout method
+  async logout() {
+    try {
+      // Simulate API call for now
+      console.log('Logout attempt');
+      
+      // Clear stored user data
+      this.currentUser = null;
+      
+      return { success: true, message: 'Çıkış başarılı!' };
+    } catch (error) {
+      throw new Error('Çıkış yapılırken hata oluştu');
+    }
   }
 }
 
-export default new ApiService();
+export default new ApiService(); 

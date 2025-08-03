@@ -7,6 +7,7 @@ import { useFonts } from "expo-font";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
+import 'expo-dev-client';
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import React from "react";

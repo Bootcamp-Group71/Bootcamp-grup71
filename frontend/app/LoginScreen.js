@@ -56,6 +56,15 @@ export default function LoginScreen() {
 
     try {
       const result = await apiService.login(formData.email, formData.password);
+      
+      // Store user data
+      apiService.storeUser({
+        id: result.user.id,
+        email: formData.email,
+        fullName: result.user.fullName,
+        full_name: result.user.full_name
+      });
+      
       Alert.alert("Başarılı!", result.message, [
         {
           text: "Tamam",
@@ -217,4 +226,4 @@ const styles = StyleSheet.create({
     textDecorationLine: "underline",
     fontWeight: "bold",
   },
-});
+}); 
