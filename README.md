@@ -142,11 +142,17 @@ ResQ projesi, Scrum metodolojisi ile yönetilmiştir. Yazılım geliştirme sür
 - **Sprint Notları:** Miro üzerinden bazı backloglara atanan kişiler değiştirildi. Sprint 2’den kalan “Sıkça Sorulan Sorular (SSS) alanı için temel başlıkların belirlenmesi” backlogu bu sprintte de tamamlanamadı. Bu göreve atanmış olan Yusuf Sabri Karakoyun’un bu sprinte katkı sağlamamış olması gerekçesiyle Sprint 3 için pasif üye olarak belirlenmesine karar verildi. Frontend ve backend geliştirmesi ürünün demosunu oluşturmaya yetecek şekilde tamamlandı.
 - **Sprint içinde tamamlanması tahmin edilen puan:** 65 puan
 - **Puan tamamlama mantığı:** Proje toplamda 340 puanlık backlog olacak şekilde tasarlanmıştı. Ancak bazı backlogların tamamlanmasında imkan görülemediğinden bu backloglar planlamadan çıkarılarak ikinci sprint başında projenin toplamda 305 puan olmasına karar verildi. Üçüncü sprintte kalan 65 puanlık backlogun tamamlanmasına karar verilmişti. Bütün backloglar tamamlanarak 65 puan elde edildi.
-- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**]()
+- **Daily Scrum:** Daily scrum toplantıları takım üyelerinin kişisel yoğunluklarından ötürü bazen Whatsapp'ta gerçekleşse de, çoğunlukla Google Meet üzerinde toplantı yapılmıştır. Daily scrum toplantısı örneğine buradan ulaşılabilir: [**Sprint 2- Daily Scrum Chats**](https://imgur.com/a/FZJMcCj)
 
 ### Sprint board update
 
+<img src="https://github.com/Bootcamp-Group71/Bootcamp-grup71/blob/main/images/BacklogBoard3.jpg" alt="Backlog Board" width="800"/>
+<img src="https://github.com/Bootcamp-Group71/Bootcamp-grup71/blob/main/images/BurndownChart3.jpg" alt="Burndown Chart" width="800"/>
+
 ### Ürün durumu
+
+<img src="https://github.com/Bootcamp-Group71/Bootcamp-grup71/blob/main/images/Screen%20Designs.png" alt="Ürün Durumu" width="800"/>
+<img src="https://github.com/Bootcamp-Group71/Bootcamp-grup71/blob/main/images/Product_2.gif" alt="Ürün Durumu" width="800"/>
 
 <summary><h3>Sprint Review</h3></summary>
 
